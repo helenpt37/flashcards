@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./Cards.css";
 
-export default function ({ front, back}) {
+export default function Card({ front, back }) {
   const [cardFace, setCardFace] = useState(true);
   const toggleCard = () => {
     setCardFace(!cardFace);
   };
 
-  return <div onClick={toggleCard} className="card-tile">{cardFace ? front : back}</div>;
+  return (
+    <div onClick={toggleCard} className="card-tile">
+      {cardFace ? front : back}
+    </div>
+  );
 }
