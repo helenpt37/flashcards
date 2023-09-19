@@ -1,0 +1,21 @@
+.new-topic-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#icons-select {
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+}
+
+.input-field {
+    width: 492px;
+    height: 44px;
+    margin: 23px;
+}
+
+.button {
+    margin: 10px;
+}
